@@ -19,7 +19,7 @@ For example, query the backend service with the unique doctorID and specific dat
 1. http://localhost:3000/getList/appointmentsList/?doctorID=3905040912&date=20200112 
    It should trigger the GET operation of RESTFUL to the backend service and show the below results.
     doctorID: 3905040912, FirstName: LIHSING, LastName: LIN
-    # Name Time Kind
+      Name Time Kind
     1 Tommy Wang 1500 New Patient
     2 David Chen 1500 Follow-up
 
@@ -28,7 +28,7 @@ For example, check the below appointlist of specific doctor on specific dae.
 1. http://localhost:3000/getList/appointmentsList/?doctorID=3905040912&date=20200112 
    It should trigger the GET operation of RESTFUL to the backend service and show the below results.
     doctorID: 3905040912, FirstName: LIHSING, LastName: LIN
-    # Name Time Kind
+      Name Time Kind
     1 Tommy Wang 1500 New Patient
     2 David Chen 1500 Follow-up
 
@@ -38,13 +38,13 @@ Delete the appointment by unique appointmentID.
 
 3. http://localhost:3000/getList/appointmentsList/?doctorID=3905040912&date=20200112
     doctorID: 3905040912, FirstName: LIHSING, LastName: LIN
-    # Name Time Kind
+      Name Time Kind
     1 David Chen 1500 Follow-up
 
 How to Verify the Reserver Appointment:
 1. http://localhost:3000/getList/appointmentsList/?doctorID=3905040912&date=20200112
     doctorID: 3905040912, FirstName: LIHSING, LastName: LIN
-    # Name Time Kind
+      Name Time Kind
     1 David Chen 1500 Follow-up
 
 Reserve the slot with below link.
@@ -54,6 +54,6 @@ Reserve the slot with below link.
 
 3. http://localhost:3000/getList/appointmentsList/?doctorID=3905040912&date=20200112
     doctorID: 3905040912, FirstName: LIHSING, LastName: LIN
-    # Name Time Kind
+      Name Time Kind
     1 David Chen 1500 Follow-up
     2 Jeremy Lin 1530 New Patient
