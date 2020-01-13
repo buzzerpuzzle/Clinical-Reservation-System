@@ -51,10 +51,6 @@ function updateCalendar(doctorToCalendar, patient){
     return doctorToCalendar;
 }
 
-var test = '00'
-console.log(test);
-console.log(parseInt(test));
-
 // Data Structure 
 // Doctor
 // We could use doctorID map to the full information of doctor.
