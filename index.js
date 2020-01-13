@@ -51,6 +51,10 @@ function updateCalendar(doctorToCalendar, patient){
     return doctorToCalendar;
 }
 
+var test = '00'
+console.log(test);
+console.log(parseInt(test));
+
 // Data Structure 
 // Doctor
 // We could use doctorID map to the full information of doctor.
@@ -247,7 +251,7 @@ app.get('/reserveAppointment/?*', (req, res) => {
             ret = ret + "You should follow the correct time format such as 1600 means 16:00<br>";
             flag = false;
         }
-        if(!(parseInt(min) == 15 || parseInt(min) == 30 || parseInt(min) == 45 || min == '00')){
+        if(!(parseInt(min) == 15 || parseInt(min) == 30 || parseInt(min) == 45 || parseInt(min) == 0)){
             ret = ret + "You should book the time slot with the min in 00, 15, 30, or 45.<br>";
             flag = false;
         } 
